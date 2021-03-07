@@ -341,7 +341,7 @@ function mesecon.vm_commit()
 		if tbl.dirty then
 			local vm = tbl.vm
 			vm:set_data(tbl.data)
-			vm:write_to_map()
+			vm:write_to_map(false)
 			vm:update_map()
 		end
 	end
